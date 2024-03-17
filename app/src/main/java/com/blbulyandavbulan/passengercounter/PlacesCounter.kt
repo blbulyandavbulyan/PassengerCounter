@@ -8,6 +8,9 @@ class PlacesCounter(
     override var placesLeft = maxPlacesCount
         private set
         get() = maxPlacesCount - placesTaken
+    init {
+        countChangedCallBack(placesTaken)
+    }
     fun inc() {
         countChangedCallBack(++placesTaken)
     }
