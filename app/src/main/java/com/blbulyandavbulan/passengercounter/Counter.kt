@@ -1,24 +1,20 @@
 package com.blbulyandavbulan.passengercounter
 
-import android.widget.TextView
-
-class Counter(private val textView: TextView) {
+class Counter(private val countChangedCallBack: (Int)->Unit) {
     var value = 0
         private set
 
-    init {
-        textView.text = "0"
-    }
-
     fun inc() {
-        value++
-        textView.text = value.toString()
+        countChangedCallBack(++value)
     }
 
     fun dec() {
         if (value > 0) value--
-        textView.text = value.toString()
+        countChangedCallBack(value)
     }
-
+    fun reset() {
+        value = 0
+        countChangedCallBack(value)
+    }
     fun isMinimum(): Boolean = value == 0
 }
