@@ -17,6 +17,7 @@ class Counter(private val textView: TextView) {
 
     fun dec() {
         if (value > 0) value--
+        textView.text = value.toString()
     }
 
     fun isMinimum(): Boolean = value == 0
