@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">PassengerCounter</string>
+    <string name="resetButtonText">Reset</string>
+    <string name="tooManyPassengers">There are too many passengers</string>
+    <string name="countOfFreePlaces">Free places left: %d</string>
+    <string name="allPlacesAreFree">All places are empty.</string>
 </resources>
