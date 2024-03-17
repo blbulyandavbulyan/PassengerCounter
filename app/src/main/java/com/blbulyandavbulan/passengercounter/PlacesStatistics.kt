@@ -1,6 +1,7 @@
 package com.blbulyandavbulan.passengercounter
 
-interface LimitsChecker {
+interface PlacesStatistics {
+    val placesLeft: Int
     fun isMinReached(): Boolean
     fun isMaxReached(): Boolean
 }
