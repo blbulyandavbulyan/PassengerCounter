@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="allPlacesAreFree">#00FF00</color>
+    <color name="countOfFreePlaces">#0000FF</color>
+    <color name="allPlacesAreTaken">#FF0000</color>
 </resources>

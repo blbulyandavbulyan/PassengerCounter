@@ -25,6 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textSize="30sp"
+        android:text="@string/allPlacesAreFree"
+        android:textColor="@color/allPlacesAreFree"
         tools:text="Very long text and very useful text"
         android:textAlignment="center"/>
 
